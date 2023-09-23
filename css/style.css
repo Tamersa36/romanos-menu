@@ -726,6 +726,7 @@ td {
 
 .menu-item-title img {
     /* margin-left: 15px; */
+    border-radius: 5%;
 }
 
 .menu-item-price {
