@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+  <head>
+    <title>Shehab Bakery</title>
+    <link rel="icon" href="img/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-angle-up"></i>
+    </button>
+  </head>
 
-<head>
-  <title>Shehab Bakery</title>
-  <link rel="icon" href="img/favicon.png">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
-</head>
+  <body>
+    <!-- page loader start -->
+    <div class="page-loader"></div>
+    <!-- page loader end -->
 
-<body>
-
-  <!-- page loader start -->
-  <div class="page-loader"></div>
-  <!-- page loader end -->
-
-  <!-- header start -->
-  <header class="header">
-    <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="logo">
-          <a href="https://shehabbakery-menu.online/"><img src="img/bakery.png" alt="logo"></a>
-        </div>
-        <button type="button" class="nav-toggler">
-          <span></span>
-        </button>
-        <nav class="nav">
-          <ul>
-            <li class="nav-item"><a href="https://romanos-menu.online/">בית</a></li>
-            <li class="nav-item"><a href="hebrew">תפריט</a></li>
-            <li class="nav-item"><a href="hebrewContact">צור קשר</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- header end -->
-
-  <!-- menu section start -->
-  <section class="menu-section sec-padding" id="our-menu">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-aos="fade-up">menu</h2>
-          <h2 data-title="----Shehab Bakery----" data-aos="fade-up"></h2>
+    <!-- header start -->
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="logo">
+            <a href="https://shehabbakery-menu.online/"
+              ><img src="img/bakery.png" alt="logo"
+            /></a>
+          </div>
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <ul>
+              <li class="nav-item">
+                <a href="https://romanos-menu.online/">בית</a>
+              </li>
+              <li class="nav-item"><a href="hebrew">תפריט</a></li>
+              <li class="nav-item"><a href="hebrewContact">צור קשר</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div class="menu-tabs" data-aos="fade-up">
-        <table style="width:100%">
-          <tr>
-            <td><button type="button" class="menu-tab-item active" data-target="#dessert">קינוחים</button></td>
-            <td><button type="button" class="menu-tab-item" data-target="#hot-drinks">משקאות חמים</button></td>
-          </tr>
-          <!-- <tr>
+    </header>
+    <!-- header end -->
+
+    <!-- menu section start -->
+    <section class="menu-section sec-padding" id="our-menu">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-aos="fade-up">menu</h2>
+            <h2 data-title="----Shehab Bakery----" data-aos="fade-up"></h2>
+          </div>
+        </div>
+        <div class="menu-tabs" data-aos="fade-up">
+          <table style="width: 100%">
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  class="menu-tab-item active"
+                  data-target="#dessert"
+                >
+                  קינוחים
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="menu-tab-item"
+                  data-target="#hot-drinks"
+                >
+                  משקאות חמים
+                </button>
+              </td>
+            </tr>
+            <!-- <tr>
             <td><button type="button" class="menu-tab-item" data-target="#personal">מאפה אישי</button></td>
             <td><button type="button" class="menu-tab-item" data-target="#sandwish">סנדוויצ'ים</button></td>
           </tr>
@@ -63,154 +83,118 @@
             <td><button type="button" class="menu-tab-item" data-target="#special-morning">בוקר מיוחד</button></td>
             <td><button type="button" class="menu-tab-item" data-target="#cold-drinks">משקאות קרים</button></td>
           </tr> -->
-        </table>
-      </div>
+          </table>
+        </div>
 
-      <!-- salads start -->
-      <div class="row menu-tab-content active" id="dessert">
-        <div class="menu-item" data-aos="fade-up-left">
-          <div class="menu-item-title">
-            <img src="img/menu/cheese.jpg" alt="menu item thumbnail">
-            <h2>גבינה אפויה</h2>
+        <!-- salads start -->
+        <div class="row menu-tab-content active" id="dessert">
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/cheese.jpg" alt="menu item thumbnail" />
+              <h2>גבינה אפויה</h2>
+            </div>
+            <div class="menu-item-price">₪22</div>
           </div>
-          <div class="item-discreption">
-            <!-- <span class="disc">
-            </span> -->
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/motzart.jpg" alt="menu item thumbnail" />
+              <h2>מוצרט</h2>
+            </div>
+            <div class="menu-item-price">₪30</div>
           </div>
-          <span class="menu-item-price-multi">
-            ₪22
-          </span>
-        </div>
-        <div class="menu-item" data-aos="fade-up-right">
-          <div class="menu-item-title">
-            <img src="img/menu/motzart.jpg" alt="menu item thumbnail">
-            <h2>מוצרט</h2>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/heaven.jpg" alt="menu item thumbnail" />
+              <h2>גן עדן</h2>
+            </div>
+            <div class="menu-item-price">₪30</div>
           </div>
-          <div class="item-discreption">
-            <!-- <span class="disc">
-            </span> -->
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img
+                src="img/menu/cheese and crumbs.jpg"
+                alt="menu item thumbnail"
+              />
+              <h2>גבינת פירורים</h2>
+            </div>
+            <div class="menu-item-price">₪26</div>
           </div>
-          <span class="menu-item-price-multi">
-            ₪30
-          </span>
-        </div>
-        <div class="menu-item" data-aos="fade-up-left">
-          <div class="menu-item-title">
-            <img src="img/menu/heaven.jpg" alt="menu item thumbnail">
-            <h2>גן עדן</h2>
-          </div>
-          <div class="item-discreption">
-            <!-- <span class="disc">
-            </span> -->
-            <span class="menu-item-price-multi">
-              ₪30
-            </span>
-          </div>
-        </div>
-        <div class="menu-item" data-aos="fade-up-right">
-          <div class="menu-item-title">
-            <img src="img/menu/cheese perorem.jpg" alt="menu item thumbnail">
-            <h2>גבינת פירורים</h2>
-          </div>
-          <div class="item-discreption">
-            <!-- <span class="disc">
-            </span> -->
-            <span class="menu-item-price-multi">
-              ₪26
-            </span>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img
+                src="img/menu/cheese and brownies.jpg"
+                alt="menu item thumbnail"
+              />
+              <h2>גבינה ובראוניס</h2>
+            </div>
+            <div class="menu-item-price">₪26</div>
           </div>
         </div>
-        <!-- <div class="menu-item" data-aos="fade-up-left">
-          <div class="menu-item-title">
-            <img src="img/menu/salad.png" alt="menu item thumbnail">
-            <h2>סלט חזה עוף</h2>
-          </div>
-          <div class="item-discreption">
-            <span class="disc">חסה, מלפפון, עגבנייה, בצל, מתובלים ברוטב, עוף בגריל, פרמזן
-            </span>
-            <span class="menu-item-price-multi">
-              ₪40
-            </span>
-          </div>
-        </div> -->
-      </div>
-      <!-- dessert end -->
+        <!-- dessert end -->
 
-      <!-- drinks start -->
-      <div class="row menu-tab-content" id="hot-drinks">
-        <div class="menu-item" data-aos="fade-up-left">
-          <div class="menu-item-title">
-            <img src="img/menu/drink.png " alt="menu item thumbnail">
-            <h2>מים גדול</h2>
+        <!-- drinks start -->
+        <div class="row menu-tab-content" id="hot-drinks">
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/drink.png " alt="menu item thumbnail" />
+              <h2>מים גדול</h2>
+            </div>
+            <span class="menu-item-price-multi"> ₪5 </span>
           </div>
-          <span class="menu-item-price-multi">
-            ₪5
-          </span>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/drink.png" alt="menu item thumbnail" />
+              <h2>קולה / קולה זירו</h2>
+            </div>
+            <span class="menu-item-price-multi"> ₪8 </span>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/drink.png" alt="menu item thumbnail" />
+              <h2>ספרייט</h2>
+            </div>
+            <span class="menu-item-price-multi"> ₪8 </span>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/drink.png" alt="menu item thumbnail" />
+              <h2>סודה</h2>
+            </div>
+            <span class="menu-item-price-multi"> ₪6 </span>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/drink.png" alt="menu item thumbnail" />
+              <h2>אקס אל</h2>
+            </div>
+            <span class="menu-item-price-multi"> ₪6 </span>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/drink.png" alt="menu item thumbnail" />
+              <h2>ענבים</h2>
+            </div>
+            <span class="menu-item-price-multi"> ₪8 </span>
+          </div>
         </div>
-        <div class="menu-item" data-aos="fade-up-right">
-          <div class="menu-item-title">
-            <img src="img/menu/drink.png" alt="menu item thumbnail">
-            <h2>קולה / קולה זירו</h2>
+        <!-- drinks end -->
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="menuFooter" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="copyright">
+            &copy; 2023 - Powered by
+            <a href="https://web-reflect.com/">Web Reflect</a>
           </div>
-          <span class="menu-item-price-multi">
-            ₪8
-          </span>
-        </div>
-        <div class="menu-item" data-aos="fade-up-left">
-          <div class="menu-item-title">
-            <img src="img/menu/drink.png" alt="menu item thumbnail">
-            <h2>ספרייט</h2>
-          </div>
-          <span class="menu-item-price-multi">
-            ₪8
-          </span>
-        </div>
-        <div class="menu-item" data-aos="fade-up-left">
-          <div class="menu-item-title">
-            <img src="img/menu/drink.png" alt="menu item thumbnail">
-            <h2>סודה</h2>
-          </div>
-          <span class="menu-item-price-multi">
-            ₪6
-          </span>
-        </div>
-        <div class="menu-item" data-aos="fade-up-right">
-          <div class="menu-item-title">
-            <img src="img/menu/drink.png" alt="menu item thumbnail">
-            <h2>אקס אל</h2>
-          </div>
-          <span class="menu-item-price-multi">
-            ₪6
-          </span>
-        </div>
-        <div class="menu-item" data-aos="fade-up-left">
-          <div class="menu-item-title">
-            <img src="img/menu/drink.png" alt="menu item thumbnail">
-            <h2>ענבים</h2>
-          </div>
-          <span class="menu-item-price-multi">
-            ₪8
-          </span>
         </div>
       </div>
-      <!-- drinks end -->
-    </div>
-  </section>
-
-  <!-- footer start -->
-  <footer class="menuFooter" id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="copyright">
-          &copy; 2023 - Powered by <a href="https://web-reflect.com/">Web Reflect</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer end -->
-  <!-- menu section end -->
-  <script src="js/aos.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    </footer>
+    <!-- footer end -->
+    <!-- menu section end -->
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
