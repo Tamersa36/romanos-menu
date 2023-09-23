@@ -690,7 +690,7 @@ td {
     left: 15px;
     right: 15px;
     bottom: 0;
-    border-bottom: 2px dashed var(--dark-light);
+    border-bottom: 2px dashed var(--main-color);
 }
 
 .menu-item:nth-last-of-type(2)::after,
