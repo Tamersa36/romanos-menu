@@ -12,9 +12,9 @@ fonts
  ------------*/
 
 :root {
-    --main-color: #E42E2D;
-    --dark: #080808;
-    --dark-light: #0f0e0e;
+    --main-color: #B07E4B;
+    --dark: #FCEFDE;
+    --dark-light: #693C12;
     --white: #ffffff;
     --white-light: #c8c8c8;
     --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
@@ -33,7 +33,8 @@ fonts
     outline: none;
 }
 
-::before, ::after {
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -83,10 +84,13 @@ h1 {
 
 h2 {
     font-weight: 600;
-    color: var(--white);
+    color: var(--main-color);
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
     font-weight: 500;
     color: var(--white);
 }
@@ -99,7 +103,7 @@ a:link {
     color: #c8c8c8;
     background-color: transparent;
     text-decoration: under;
-  }
+}
 
 .container {
     max-width: 1170px;
@@ -155,18 +159,18 @@ section {
     text-transform: capitalize;
 }
 
-.arabic_title{
+.arabic_title {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Noto Kufi Arabic', sans-serif;
 
 }
 
-.hebrew_title{
+.hebrew_title {
     font-size: 33px;
     font-weight: bold;
     font-family: 'Miriam Libre', sans-serif;
-    
+
 }
 
 /* buttons */
@@ -243,9 +247,12 @@ section {
 /* animation keyframes */
 
 @keyframes zoomInOut {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
@@ -255,15 +262,19 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
 }
 
 @keyframes pageLoader {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(-50px);
     }
+
     50% {
         transform: translateX(50px);
     }
@@ -320,7 +331,7 @@ section {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color:rgb(87, 87, 87) ;
+    background-color: var(--dark-light);
     box-shadow: var(--shadow);
     z-index: -1;
     transition: transform 0.5s ease;
@@ -337,6 +348,7 @@ section {
     align-items: center;
     padding: 0 5px;
     margin-left: 5px;
+    max-width: 25%;
 }
 
 .header .nav-toggler {
@@ -373,7 +385,8 @@ section {
     transition: background-color 0.5s ease;
 }
 
-.header .nav-toggler span::before, .header .nav-toggler span::after {
+.header .nav-toggler span::before,
+.header .nav-toggler span::after {
     content: '';
     position: absolute;
     left: 0;
@@ -457,7 +470,7 @@ section {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: url('../img/home-bg.jpg');
+    background-image: url('../img/bakery-bg.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -497,7 +510,8 @@ section {
     background-color: var(--dark);
 }
 
-.about-text, .about-img {
+.about-text,
+.about-img {
     width: 50%;
     padding: 0 15px;
 }
@@ -555,10 +569,9 @@ section {
  menu section 
  -----------------*/
 
- table
- {
-     table-layout: fixed;
- }
+table {
+    table-layout: fixed;
+}
 
 .menu-section {
     background-color: var(--dark);
@@ -573,7 +586,7 @@ section {
     padding: 0 15px;
     margin-bottom: 10px;
     margin-top: -25px;
-    
+
 }
 
 .menu-tab-item {
@@ -581,24 +594,25 @@ section {
     font-weight: bold;
     font-family: 'Miriam Libre', sans-serif;
     border-radius: 5px;
-    border:2px;
+    border: 2px;
     padding: 12px 5px 12px 5px;
-    color: var(--white);
+    color: var(--main-color);
     cursor: pointer;
     margin: 0 0px 10px;
     width: 100%;
     transition: color 0.3s ease;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--dark);
     border-style: solid;
-    border-color: rgb(255, 255, 255);
-    
+    border-color: var(--main-color);
+
 }
+
 .ar {
     font-size: 18px;
     font-weight: bold;
     font-family: 'Noto Kufi Arabic', sans-serif;
     border-radius: 5px;
-    border:2px;
+    border: 2px;
     padding: 8px 5px 8px 5px;
     color: var(--white);
     cursor: pointer;
@@ -609,13 +623,13 @@ section {
     border-style: solid;
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
-    
+
 }
 
 
 td {
-    padding-inline: 5px; 
-    
+    padding-inline: 5px;
+
 }
 
 .menu-tab-item.active {
@@ -633,7 +647,7 @@ td {
 }
 
 .menu-item {
-    border-top: thin dashed  var(--white);
+    border-top: thin dashed var(--white);
     width: 50%;
     padding: 20px 15px;
     display: table-row;
@@ -649,7 +663,7 @@ td {
     padding-top: 10px;
 }
 
-.disc{
+.disc {
     font-size: 19px;
     font-weight: 450;
     text-align: right;
@@ -659,7 +673,7 @@ td {
     font-family: 'Miriam Libre', sans-serif;
 }
 
-.disc_ar{
+.disc_ar {
     font-size: 18px;
     font-weight: 450;
     text-align: right;
@@ -667,7 +681,7 @@ td {
     display: list-item;
     margin-right: 10px;
     font-family: 'Almarai', sans-serif;
-    
+
 }
 
 .menu-item::after {
@@ -679,16 +693,19 @@ td {
     border-bottom: 2px dashed var(--dark-light);
 }
 
-.menu-item:nth-last-of-type(2)::after, .menu-item:nth-last-of-type(1)::after {
+.menu-item:nth-last-of-type(2)::after,
+.menu-item:nth-last-of-type(1)::after {
     border: none;
 }
 
 .menu-item-title {
     padding-bottom: 10px;
     ;
-    display: flex;
+    /* display: flex; */
+    display: grid;
     align-items: center;
     max-width: calc(100% - px);
+    justify-items: center;
 }
 
 .menu-item-title h2 {
@@ -698,6 +715,7 @@ td {
     text-transform: capitalize;
     transition: color 0.3s ease;
 }
+
 .menu-item-title-ar h2 {
     font-size: 1.1em;
     font-weight: bold;
@@ -707,7 +725,7 @@ td {
 }
 
 .menu-item-title img {
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 .menu-item-price {
@@ -739,7 +757,7 @@ td {
     font-family: 'Almarai', sans-serif;
 }
 
-.tablePrice{
+.tablePrice {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -750,7 +768,7 @@ td {
     font-family: 'Almarai', sans-serif;
 }
 
-.tablePriceHeb{
+.tablePriceHeb {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -943,7 +961,8 @@ p {
 .footer-item .social-links a:hover {
     color: var(--main-color);
 }
-.copyright{
+
+.copyright {
     font-weight: 500;
 }
 
@@ -1073,9 +1092,11 @@ p {
     .testi-item {
         width: calc(50% - 30px);
     }
+
     .team-item {
         width: 50%;
     }
+
     .team-item:not(:last-child) {
         margin-bottom: 75px;
     }
@@ -1086,24 +1107,33 @@ p {
         font-size: 50px;
         line-height: 65px;
     }
-    .menu-item, .about-text, .about-img {
+
+    .menu-item,
+    .about-text,
+    .about-img {
         width: 100%;
     }
+
     .menu-item:nth-last-of-type(2):after {
         border-bottom: 2px dashed var(--dark-light);
     }
+
     .about-img {
         margin-top: 40px;
     }
+
     .about-text h3 {
         font-size: 24px;
     }
+
     .footer-item {
         width: 100%;
     }
+
     .footer-item:not(:last-child) {
         margin-bottom: 30px;
     }
+
     .testi-item {
         width: calc(100% - 30px);
     }
