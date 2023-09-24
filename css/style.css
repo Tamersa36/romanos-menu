@@ -172,11 +172,17 @@ section {
     font-family: 'Miriam Libre', sans-serif;
 
 }
+.english_title {
+    font-size: 33px;
+    font-weight: bold;
+    font-family: 'Miriam Libre', sans-serif;
+
+}
 
 /* buttons */
 
 .btn {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 30px;
     background-color: transparent;
     border-radius: 15px;
@@ -194,7 +200,7 @@ section {
 }
 
 .btn-ar {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 30px;
     background-color: transparent;
     border-radius: 15px;
@@ -221,7 +227,7 @@ section {
 }
 
 .btn-disabled {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 30px;
     background-color: transparent;
     border-radius: 30px;
@@ -242,6 +248,11 @@ section {
 .soon {
     padding-right: 135px;
     opacity: 0.6;
+}
+.languages{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* animation keyframes */
@@ -483,7 +494,7 @@ section {
 }
 
 .home-text {
-    padding: 0 15px;
+    padding: 0 50px;
     padding-bottom: 100px;
     max-width: 700px;
     width: 100%;
