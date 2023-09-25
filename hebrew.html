@@ -33,7 +33,7 @@
           <nav class="nav">
             <ul>
               <li class="nav-item">
-                <a href="https://romanos-menu.online/">בית</a>
+                <a href="https://shehabbakery-menu.online/">בית</a>
               </li>
               <li class="nav-item"><a href="hebrew">תפריט</a></li>
               <li class="nav-item"><a href="hebrewContact">צור קשר</a></li>
@@ -65,6 +65,38 @@
                   קינוחים
                 </button>
               </td>
+
+              <td>
+                <button
+                  type="button"
+                  class="menu-tab-item"
+                  data-target="#dessert"
+                >
+                  בוקר מיוחד
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  type="button"
+                  class="menu-tab-item"
+                  data-target="#dessert"
+                >
+                  מאפה אישי
+                </button>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="menu-tab-item"
+                  data-target="#dessert"
+                >
+                  סנדוויצ'ים
+                </button>
+              </td>
+            </tr>
+            <tr>
               <td>
                 <button
                   type="button"
@@ -74,15 +106,16 @@
                   משקאות חמים
                 </button>
               </td>
+              <td>
+                <button
+                  type="button"
+                  class="menu-tab-item"
+                  data-target="#hot-drinks"
+                >
+                  משקאות קרים
+                </button>
+              </td>
             </tr>
-            <!-- <tr>
-            <td><button type="button" class="menu-tab-item" data-target="#personal">מאפה אישי</button></td>
-            <td><button type="button" class="menu-tab-item" data-target="#sandwish">סנדוויצ'ים</button></td>
-          </tr>
-          <tr>
-            <td><button type="button" class="menu-tab-item" data-target="#special-morning">בוקר מיוחד</button></td>
-            <td><button type="button" class="menu-tab-item" data-target="#cold-drinks">משקאות קרים</button></td>
-          </tr> -->
           </table>
         </div>
 
@@ -267,8 +300,7 @@
               <img src="img/menu/akrel-perot.webp" alt="menu item thumbnail" />
               <h2>אקלר פירות יער</h2>
             </div>
-            <div class="disc">
-            </div>
+            <div class="disc"></div>
             <div class="menu-item-price">₪20</div>
           </div>
           <div class="menu-item" data-aos="fade-up-left">
@@ -349,42 +381,75 @@
               <img src="img/menu/latte.jpg" alt="menu item thumbnail" />
               <h2>הפוך - קפוצ’ינו - נס קפה</h2>
             </div>
-            <span class="menu-item-price"> ₪5 </span>
+            <table class="tablePrice">
+              <tr>
+                <td>קטן</td>
+                <td>|</td>
+                <td>גדול</td>
+              </tr>
+              <tr>
+                <td>₪10</td>
+                <td></td>
+                <td>₪15</td>
+              </tr>
+            </table>
           </div>
           <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/menu/espresso.jpg" alt="menu item thumbnail" />
               <h2>אספרסו</h2>
             </div>
-            <span class="menu-item-price-multi"> ₪8 </span>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/americano.jpg" alt="menu item thumbnail" />
-              <h2>אמריקנו</h2>
-            </div>
-            <span class="menu-item-price-multi"> ₪8 </span>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/machiato.jpg" alt="menu item thumbnail" />
-              <h2>מקיאטו - אילן</h2>
-            </div>
-            <span class="menu-item-price-multi"> ₪6 </span>
+            <table class="tablePrice">
+              <tr>
+                <td>קטן</td>
+                <td>|</td>
+                <td>גדול</td>
+              </tr>
+              <tr>
+                <td>₪6</td>
+                <td></td>
+                <td>₪12</td>
+              </tr>
+            </table>
           </div>
           <div class="menu-item" data-aos="fade-up-left">
             <div class="menu-item-title">
               <img src="img/menu/hot-chocolate.jpg" alt="menu item thumbnail" />
               <h2>שוקו חם</h2>
             </div>
-            <span class="menu-item-price-multi"> ₪8 </span>
+            <table class="tablePrice">
+              <tr>
+                <td>קטן</td>
+                <td>|</td>
+                <td>גדול</td>
+              </tr>
+              <tr>
+                <td>₪10</td>
+                <td></td>
+                <td>₪15</td>
+              </tr>
+            </table>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/americano.jpg" alt="menu item thumbnail" />
+              <h2>אמריקנו</h2>
+            </div>
+            <div class="menu-item-price">₪15</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/machiato.jpg" alt="menu item thumbnail" />
+              <h2>מקיאטו - אילן</h2>
+            </div>
+            <div class="menu-item-price">₪10</div>
           </div>
           <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/menu/tea.jpg" alt="menu item thumbnail" />
               <h2>תה - תיון לבחירה</h2>
             </div>
-            <span class="menu-item-price-multi"> ₪6 </span>
+            <div class="menu-item-price">₪10</div>
           </div>
         </div>
         <!-- hot drinks end -->

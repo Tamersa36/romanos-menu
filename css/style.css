@@ -744,10 +744,11 @@ td {
 
 .menu-item-price {
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     color: var(--main-color);
     display: grid;
+    font-family: 'Almarai', sans-serif;
 }
 
 .menu-item-price-multi {
@@ -774,7 +775,7 @@ td {
     text-align: center;
     padding-top: 10px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--main-color);
     font-family: 'Almarai', sans-serif;
 }
@@ -784,8 +785,8 @@ td {
     margin-right: auto;
     text-align: center;
     padding-top: 10px;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 500;
     color: var(--main-color);
     font-family: 'Miriam Libre', sans-serif;
 }
