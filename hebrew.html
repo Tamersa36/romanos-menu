@@ -1,156 +1,136 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <title>Shehab Bakery</title>
-    <link rel="icon" href="img/bakery.png" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fas fa-angle-up"></i>
-    </button>
-  </head>
 
-  <body>
-    <!-- page loader start -->
-    <div class="page-loader"></div>
-    <!-- page loader end -->
+<head>
+  <title>Shehab Bakery</title>
+  <link rel="icon" href="img/bakery.png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</head>
 
-    <!-- header start -->
-    <header class="header">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="logo">
-            <a href="https://shehabbakery-menu.online/"
-              ><img src="img/bakery.png" alt="logo"
-            /></a>
-          </div>
-          <button type="button" class="nav-toggler">
-            <span></span>
-          </button>
-          <nav class="nav">
-            <ul>
-              <li class="nav-item">
-                <a href="https://shehabbakery-menu.online/">בית</a>
-              </li>
-              <li class="nav-item"><a href="hebrew">תפריט</a></li>
-              <li class="nav-item"><a href="hebrewContact">צור קשר</a></li>
-            </ul>
-          </nav>
+<body>
+  <!-- page loader start -->
+  <div class="page-loader"></div>
+  <!-- page loader end -->
+
+  <!-- header start -->
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="logo">
+          <a href="https://shehabbakery-menu.online/"><img src="img/bakery.png" alt="logo" /></a>
+        </div>
+        <button type="button" class="nav-toggler">
+          <span></span>
+        </button>
+        <nav class="nav">
+          <ul>
+            <li class="nav-item">
+              <a href="https://shehabbakery-menu.online/">בית</a>
+            </li>
+            <li class="nav-item"><a href="hebrew">תפריט</a></li>
+            <li class="nav-item"><a href="hebrewContact">צור קשר</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- menu section start -->
+  <section class="menu-section sec-padding" id="our-menu">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2 data-aos="fade-up">menu</h2>
+          <h2 data-title="----Shehab Bakery----" data-aos="fade-up"></h2>
         </div>
       </div>
-    </header>
-    <!-- header end -->
+      <div class="menu-tabs" data-aos="fade-up">
+        <table style="width: 100%">
+          <tr>
+            <td>
+              <button type="button" class="menu-tab-item active" data-target="#dessert">
+                קינוחים
+              </button>
+            </td>
 
-    <!-- menu section start -->
-    <section class="menu-section sec-padding" id="our-menu">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2 data-aos="fade-up">menu</h2>
-            <h2 data-title="----Shehab Bakery----" data-aos="fade-up"></h2>
+            <td>
+              <button type="button" class="menu-tab-item" data-target="#special-morning">
+                בוקר מיוחד
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="menu-tab-item" data-target="#personal-pastry">
+                מאפה אישי
+              </button>
+            </td>
+            <td>
+              <button type="button" class="menu-tab-item" data-target="#sandwish">
+                סנדוויצ'ים
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="menu-tab-item" data-target="#hot-drinks">
+                משקאות חמים
+              </button>
+            </td>
+            <td>
+              <button type="button" class="menu-tab-item" data-target="#cold-drinks">
+                משקאות קרים
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- dessert start -->
+      <div class="row menu-tab-content active" id="dessert">
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/cheeses.webp" alt="menu item thumbnail" />
+            <h2>גבינה אפויה</h2>
           </div>
+          <div class="disc">עוגת גבינה קלאסית אורירית וקלה</div>
+          <div class="menu-item-price">₪22</div>
         </div>
-        <div class="menu-tabs" data-aos="fade-up">
-          <table style="width: 100%">
-            <tr>
-              <td>
-                <button
-                  type="button"
-                  class="menu-tab-item active"
-                  data-target="#dessert"
-                >
-                  קינוחים
-                </button>
-              </td>
-
-              <td>
-                <button
-                  type="button"
-                  class="menu-tab-item"
-                  data-target="#special-morning"
-                >
-                  בוקר מיוחד
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <button
-                  type="button"
-                  class="menu-tab-item"
-                  data-target="#personal-pastry"
-                >
-                  מאפה אישי
-                </button>
-              </td>
-              <td>
-                <button
-                  type="button"
-                  class="menu-tab-item"
-                  data-target="#sandwish"
-                >
-                  סנדוויצ'ים
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <button
-                  type="button"
-                  class="menu-tab-item"
-                  data-target="#hot-drinks"
-                >
-                  משקאות חמים
-                </button>
-              </td>
-              <td>
-                <button
-                  type="button"
-                  class="menu-tab-item"
-                  data-target="#cold-drinks"
-                >
-                  משקאות קרים
-                </button>
-              </td>
-            </tr>
-          </table>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/tiger.jpg" alt="menu item thumbnail" />
+            <h2>גבינה טייגר ציז</h2>
+          </div>
+          <div class="disc">גבינת שמנת אפויה בשילוב שוקולד לבן בציפוי מרנג איטלקי</div>
+          <div class="menu-item-price">₪30</div>
         </div>
-
-        <!-- dessert start -->
-        <div class="row menu-tab-content active" id="dessert">
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/cheeses.webp" alt="menu item thumbnail" />
-              <h2>גבינה אפויה</h2>
-            </div>
-            <div class="disc">עוגת גבינה קלאסית אורירית וקלה</div>
-            <div class="menu-item-price">₪22</div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/motzart.webp" alt="menu item thumbnail" />
+            <h2>מוצרט</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/motzart.webp" alt="menu item thumbnail" />
-              <h2>מוצרט</h2>
-            </div>
-            <div class="disc">
-              שוקולד מריר,שוקולד לבן וריבת חלב בין שכבות דקואז אגוזים
-            </div>
-            <div class="menu-item-price">₪30</div>
+          <div class="disc">
+            שוקולד מריר,שוקולד לבן וריבת חלב בין שכבות דקואז אגוזים
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img
-                src="img/menu/cheese and brownies.webp"
-                alt="menu item thumbnail"
-              />
-              <h2>גבינה ובראוניס</h2>
-            </div>
-            <div class="disc">עוגת גבינת קטיפתית על בסיס בראוניס משובח</div>
-            <div class="menu-item-price">₪30</div>
+          <div class="menu-item-price">₪30</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/cheese and brownies.webp" alt="menu item thumbnail" />
+            <h2>גבינה ובראוניס</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
+          <div class="disc">עוגת גבינת קטיפתית על בסיס בראוניס משובח</div>
+          <div class="menu-item-price">₪30</div>
+        </div>
+        <!-- <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img
                 src="img/menu/chocolate-parvi.webp"
@@ -162,620 +142,646 @@
               עוגת סאכר במילוי קרם שוקולד ובציפוי גאנז' שוקולד
             </div>
             <div class="menu-item-price">₪26</div>
+          </div> -->
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/alfahores.jpg" alt="menu item thumbnail" />
+            <h2>אלפחורס</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/heaven.jpg" alt="menu item thumbnail" />
-              <h2>גן עדן</h2>
-            </div>
-            <div class="disc">עוגה עשירה בגבינה ושמנת חמוצה ומעל פירות יער</div>
-            <div class="menu-item-price">₪30</div>
+          <div class="disc">ריבת חלב בין שכבות בצק אלפחורס ודקואז קוקוס בציפוי קוקוס</div>
+          <div class="menu-item-price">₪30</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/heaven.jpg" alt="menu item thumbnail" />
+            <h2>גן עדן</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img
-                src="img/menu/cheese and crumbs.webp"
-                alt="menu item thumbnail"
-              />
-              <h2>גבינת פירורים</h2>
-            </div>
-            <div class="disc">
-              גבינה קטיפתית עשירה ומעל פרורי בצק פריך חמאתי
-            </div>
-            <div class="menu-item-price">₪26</div>
+          <div class="disc">עוגה עשירה בגבינה ושמנת חמוצה ומעל פירות יער</div>
+          <div class="menu-item-price">₪30</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/cheese and crumbs.webp" alt="menu item thumbnail" />
+            <h2>גבינת פירורים</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/frero.webp" alt="menu item thumbnail" />
-              <h2>פררו</h2>
-            </div>
-            <div class="disc">מוס פררו רושה על בסיס עוגת שוקולד עשירה</div>
-            <div class="menu-item-price">₪26</div>
+          <div class="disc">
+            גבינה קטיפתית עשירה ומעל פרורי בצק פריך חמאתי
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/kinder.webp" alt="menu item thumbnail" />
-              <h2>קינדר</h2>
-            </div>
-            <div class="disc">
-              מוס קינדר על שכבת קראנצ' שוקולדים ובראוניס בציפוי גנאש שוקולד חלב
-              עשיר
-            </div>
-            <div class="menu-item-price">₪26</div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <!-- <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/frero.webp" alt="menu item thumbnail" />
+            <h2>פררו</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/rebat-halav.webp" alt="menu item thumbnail" />
-              <h2>כיפת ריבת חלב</h2>
-            </div>
-            <div class="disc">
-              מוס שוקולד לבן קטיפתי עוטף חצי כדור מוס ריבת חלב ומעליה ציפוי
-              שוקולד לבן מדהים. כל זה על בסיס בצק שקדים ושוקולד לבן
-            </div>
-            <div class="menu-item-price">₪26</div>
+          <div class="disc">מוס פררו רושה על בסיס עוגת שוקולד עשירה</div>
+          <div class="menu-item-price">₪26</div>
+        </div> -->
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/kinder.webp" alt="menu item thumbnail" />
+            <h2>קינדר</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/surprise.webp" alt="menu item thumbnail" />
-              <h2>הפתעת שוקולד</h2>
-            </div>
-            <div class="disc">סופלה שוקולד מריר, והפתעת שוקולד לבן</div>
-            <div class="menu-item-price">₪26</div>
+          <div class="disc">
+            מוס קינדר על שכבת קראנצ' שוקולדים ובראוניס בציפוי גנאש שוקולד חלב
+            עשיר
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/chocolata.webp" alt="menu item thumbnail" />
-              <h2>שוקולטה</h2>
-            </div>
-            <div class="disc">
-              מפגש פסגה של עוגת שוקולד מריר עם שוקולד פרלין ומעל שניהם תלתלים של
-              שוקולד בלגי לבן
-            </div>
-            <div class="menu-item-price">₪35</div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/rebat-halav.webp" alt="menu item thumbnail" />
+            <h2>כיפת ריבת חלב</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/krem-shkedem.webp" alt="menu item thumbnail" />
-              <h2>טארט קרם שקדים</h2>
-            </div>
-            <div class="disc">
-              קלתיות חמאה קרם פראנג'יפאן שקדים ווניל בציפוי שקדים קלויים
-              מקורמלים
-            </div>
-            <div class="menu-item-price">₪26</div>
+          <div class="disc">
+            מוס שוקולד לבן קטיפתי עוטף חצי כדור מוס ריבת חלב ומעליה ציפוי
+            שוקולד לבן מדהים. כל זה על בסיס בצק שקדים ושוקולד לבן
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/american-pie.webp" alt="menu item thumbnail" />
-              <h2>אמריקן פאי</h2>
-            </div>
-            <div class="disc">
-              קלתיות חמאה במילוי תפוחים לימוני מעודן ותערובת טעמים ייחודית
-            </div>
-            <div class="menu-item-price">₪26</div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/marlen.jpg" alt="menu item thumbnail" />
+            <h2>מרלין</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/marlen.jpg" alt="menu item thumbnail" />
-              <h2>מרלין</h2>
-            </div>
-            <div class="disc">
-              מוס גבינה עם פירות יער על תחתית בצק ברטון חמאתי, שנטי שוקולד לבן,
-              מרמלדת דובדבן, קולי תות ונשיקות מרנג
-            </div>
-            <div class="menu-item-price">₪26</div>
+          <div class="disc">
+            מוס גבינה עם פירות יער על תחתית בצק ברטון חמאתי, שנטי שוקולד לבן,
+            מרמלדת דובדבן, קולי תות ונשיקות מרנג
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/trekolad.jpg" alt="menu item thumbnail" />
-              <h2>טריקולד</h2>
-            </div>
-            <div class="disc">
-              שלוש שכבות של שוקולד בלגי משובח : מריר, חלב ולבן
-            </div>
-            <div class="menu-item-price">₪26</div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/trekolad.jpg" alt="menu item thumbnail" />
+            <h2>טריקולד</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/sabarina.webp" alt="menu item thumbnail" />
-              <h2>סברינה</h2>
-            </div>
-            <div class="disc">
-              בצק אורירי ספוג בסירופ נהדר ומעליו שמנת מתוקה טרייה
-            </div>
-            <div class="menu-item-price">₪15</div>
+          <div class="disc">
+            שלוש שכבות של שוקולד בלגי משובח : מריר, חלב ולבן
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/akrel.webp" alt="menu item thumbnail" />
-              <h2>אקלר שוקולד</h2>
-            </div>
-            <div class="disc">
-              אקלר ממולא בקרם פטיסיאר בשילוב שמנת מצופה בשוקולד בלגי
-            </div>
-            <div class="menu-item-price">₪15</div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/loutus.jpg" alt="menu item thumbnail" />
+            <h2>לוטוס</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/akrel-perot.webp" alt="menu item thumbnail" />
-              <h2>אקלר פירות יער</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪20</div>
+          <div class="disc">קרם לוטוס וגבינת שמנת עשירה על בסיס קרמבל עוגיות לוטוס פריך בציפוי ממרח לוטוס
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/p7zniot.webp" alt="menu item thumbnail" />
-              <h2>פחזניות</h2>
-            </div>
-            <div class="disc">
-              פחזניות ממולאות בקרם פטיסיאר בשילוב שמנת מצופות בשוקולד בלגי
-            </div>
-            <div class="menu-item-price">₪4</div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/french.jpg" alt="menu item thumbnail" />
+            <h2>פרנץ ונילה</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img
-                src="img/menu/chocolate-balls.webp"
-                alt="menu item thumbnail"
-              />
-              <h2>כדורי שוקולד</h2>
-            </div>
-            <div class="disc">כדורי שוקולד בלגי איכותי בציפוי קוקוס</div>
-            <div class="menu-item-price">₪4</div>
+          <div class="disc">שילוב מדהים של מוס שוקולד אורירי ומוס וניל קטיפתי בטעם פרנץ' ונילה
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/katsrot.webp" alt="menu item thumbnail" />
-              <h2>גליליות קצרות</h2>
-            </div>
-            <div class="disc">
-              גלילית ופל במילוי שמנת מתוקה וציפוי שוקולד בלגי
-            </div>
-            <div class="menu-item-price">₪4</div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/surprise.webp" alt="menu item thumbnail" />
+            <h2>הפתעת שוקולד</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/alphakores.webp" alt="menu item thumbnail" />
-              <h2>אלפחורס</h2>
-            </div>
-            <div class="disc">כריך משתי עוגיות שביניהן מרוחה ריבת חלב</div>
-            <div class="menu-item-price">₪9</div>
+          <div class="disc">סופלה שוקולד מריר, והפתעת שוקולד לבן</div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/chocolata.webp" alt="menu item thumbnail" />
+            <h2>שוקולטה</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/mos-fostok.jpg" alt="menu item thumbnail" />
-              <h2>צנצנת מוס פיסטוק</h2>
-            </div>
-            <div class="disc">מוס שוקולד לבן ופיסטוק</div>
-            <div class="menu-item-price">₪24</div>
+          <div class="disc">
+            מפגש פסגה של עוגת שוקולד מריר עם שוקולד פרלין ומעל שניהם תלתלים של
+            שוקולד בלגי לבן
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/terameso.jpg" alt="menu item thumbnail" />
-              <h2>צנצנת טרמיסו</h2>
-            </div>
-            <div class="disc">מוס טרמיסו עם ביסקוויט באמצע</div>
-            <div class="menu-item-price">₪24</div>
+          <div class="menu-item-price">₪35</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/krem-shkedem.webp" alt="menu item thumbnail" />
+            <h2>טארט קרם שקדים</h2>
           </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img
-                src="img/menu/vanila-caramel.jpg"
-                alt="menu item thumbnail"
-              />
-              <h2>צנצנת וניל ושבבי קרמל</h2>
-            </div>
-            <div class="disc">
-              מוס שוקולד לבן עם שכבת קרמל ושברי בראוניז משובח
-            </div>
-            <div class="menu-item-price">₪24</div>
+          <div class="disc">
+            קלתיות חמאה קרם פראנג'יפאן שקדים ווניל בציפוי שקדים קלויים
+            מקורמלים
           </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/donut.jpg" alt="menu item thumbnail" />
-              <h2>דונאט</h2>
-            </div>
-            <!-- <div class="disc">
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/american-pie.webp" alt="menu item thumbnail" />
+            <h2>אמריקן פאי</h2>
+          </div>
+          <div class="disc">
+            קלתיות חמאה במילוי תפוחים לימוני מעודן ותערובת טעמים ייחודית
+          </div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/nuts.jpg" alt="menu item thumbnail" />
+            <h2>פאי אגוזים</h2>
+          </div>
+          <div class="disc">סירת בצק פריך במילוי אגוזי מלך טריים בסירופ קרמל משובח </div>
+          <div class="menu-item-price">₪26</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/sabarina.webp" alt="menu item thumbnail" />
+            <h2>סברינה</h2>
+          </div>
+          <div class="disc">
+            בצק אורירי ספוג בסירופ נהדר ומעליו שמנת מתוקה טרייה
+          </div>
+          <div class="menu-item-price">₪15</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/akrel.webp" alt="menu item thumbnail" />
+            <h2>אקלר שוקולד</h2>
+          </div>
+          <div class="disc">
+            אקלר ממולא בקרם פטיסיאר בשילוב שמנת מצופה בשוקולד בלגי
+          </div>
+          <div class="menu-item-price">₪15</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/akrel-perot.webp" alt="menu item thumbnail" />
+            <h2>אקלר פירות יער</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪20</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/p7zniot.webp" alt="menu item thumbnail" />
+            <h2>פחזניות</h2>
+          </div>
+          <div class="disc">
+            פחזניות ממולאות בקרם פטיסיאר בשילוב שמנת מצופות בשוקולד בלגי
+          </div>
+          <div class="menu-item-price">₪4</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/chocolate-balls.webp" alt="menu item thumbnail" />
+            <h2>כדורי שוקולד</h2>
+          </div>
+          <div class="disc">כדורי שוקולד בלגי איכותי בציפוי קוקוס</div>
+          <div class="menu-item-price">₪4</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/katsrot.webp" alt="menu item thumbnail" />
+            <h2>גליליות קצרות</h2>
+          </div>
+          <div class="disc">
+            גלילית ופל במילוי שמנת מתוקה וציפוי שוקולד בלגי
+          </div>
+          <div class="menu-item-price">₪4</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/alphakores.webp" alt="menu item thumbnail" />
+            <h2>אלפחורס</h2>
+          </div>
+          <div class="disc">כריך משתי עוגיות שביניהן מרוחה ריבת חלב</div>
+          <div class="menu-item-price">₪9</div>
+        </div>
+        <!-- <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/mos-fostok.jpg" alt="menu item thumbnail" />
+            <h2>צנצנת מוס פיסטוק</h2>
+          </div>
+          <div class="disc">מוס שוקולד לבן ופיסטוק</div>
+          <div class="menu-item-price">₪24</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/terameso.jpg" alt="menu item thumbnail" />
+            <h2>צנצנת טרמיסו</h2>
+          </div>
+          <div class="disc">מוס טרמיסו עם ביסקוויט באמצע</div>
+          <div class="menu-item-price">₪24</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/vanila-caramel.jpg" alt="menu item thumbnail" />
+            <h2>צנצנת וניל ושבבי קרמל</h2>
+          </div>
+          <div class="disc">
+            מוס שוקולד לבן עם שכבת קרמל ושברי בראוניז משובח
+          </div>
+          <div class="menu-item-price">₪24</div>
+        </div> -->
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/donuts 2.jpg" alt="menu item thumbnail" />
+            <h2>דונאט</h2>
+          </div>
+          <!-- <div class="disc">
             </div> -->
-            <div class="menu-item-price">₪8</div>
-          </div>
-        </div>
-        <!-- dessert end -->
-
-        <!-- special morning start -->
-        <div class="row menu-tab-content" id="special-morning">
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/borekas.jpg" alt="menu item thumbnail" />
-              <h2>בורקס אישי גבינה / תפוח אדמה</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪10</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/borekas-sandwish.jpg" alt="menu item thumbnail" />
-              <h2>סנדוויץ בורקס</h2>
-            </div>
-            <div class="disc">
-              גבינה, רוטב פסטו, עגבניות, מלפפון חמוץ
-              <br />
-              (ביצה קשה +₪3)
-            </div>
-            <div class="menu-item-price">₪15</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/mnkoshe.jpg" alt="menu item thumbnail" />
-              <h2>פיתה עם זעתר</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪6</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/mnkoshe-bsal.jpg" alt="menu item thumbnail" />
-              <h2>פיתה עם בצל</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪8</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/mnkoshe-jebne.jpg" alt="menu item thumbnail" />
-              <h2>פיתה עם גבינה</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪9</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/pizza.jpg" alt="menu item thumbnail" />
-              <h2>פיצה אישית עם תוספת אחת</h2>
-            </div>
-            <div class="disc">
-              תוספות: זיתים / תירס
-              <br />
-              (זיתים ותירס +₪2)
-            </div>
-            <div class="menu-item-price">₪10</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/borekas.jpg" alt="menu item thumbnail" />
-              <h2>טוסט הבית</h2>
-            </div>
-            <div class="disc">
-              מיקס גבינה צהובה ובולגרית עם רוטב הבית,זיתים ותירס
-            </div>
-            <div class="menu-item-price">₪20</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/borekas.jpg" alt="menu item thumbnail" />
-              <h2>בורקס עגלה</h2>
-            </div>
-            <div class="disc">
-              גבינה / תפוח אדמה / פיצה / פטריות (תרד וגבינה +₪4)
-              <br />
-              מוגש עם מלפפון חמוץ זיתים ורוטב עגבניות (תוספת ביצה +₪3)
-            </div>
-            <div class="menu-item-price">₪17</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/borekas.jpg" alt="menu item thumbnail" />
-              <h2>שתי מקלות גבינה לבחירה</h2>
-            </div>
-            <div class="disc">גבינה / גבינה חריפה (תוספת מקל +₪8)</div>
-            <div class="menu-item-price">₪16</div>
-          </div>
-        </div>
-        <!-- special morning end -->
-
-        <!-- personal pastry start -->
-        <div class="row menu-tab-content" id="personal-pastry">
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
-              <h2>קרואסון חמאה</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪10</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
-              <h2>קרואסון שוקולד</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪10</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
-              <h2>קרואסון שקדים</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪10</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
-              <h2>קרואסון גבינה</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪10</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
-              <h2>קינמון</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪10</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
-              <h2>רוגלך</h2>
-            </div>
-            <!-- <div class="disc"></div> -->
-            <div class="menu-item-price">₪10</div>
-          </div>
-        </div>
-        <!-- personal pastry end-->
-
-        <!-- sandwish start -->
-        <div class="row menu-tab-content" id="sandwish">
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
-              <h2>בגט טונה</h2>
-            </div>
-            <div class="disc">חסה, בצל, והממרח המיוחד שלנו, תירס מיונז וזעתר</div>
-            <div class="menu-item-price">₪25</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
-              <h2>בגט גבינה וסלמי</h2>
-            </div>
-            <div class="disc">גבינת גאודה, סלמי, רוטבאיולי, חסה ומלפפון חמוץ</div>
-            <div class="menu-item-price">₪25</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
-              <h2>בגט נקניקיות גריל קלאסי</h2>
-            </div>
-            <div class="disc">נקניקיות חריפות / רגילות ומלפפון חמוץ</div>
-            <div class="menu-item-price">₪20</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
-              <h2>גבטה בולגרית</h2>
-            </div>
-            <div class="disc">רוטב פסטו, עגבניות, חסה, מלפפון חמוץ</div>
-            <div class="menu-item-price">₪25</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
-              <h2>המיוחד שלנו</h2>
-            </div>
-            <div class="disc">לחם פרינה עם כתף בקר וגבינה צהובה, רוטב פסטו ואיולי, חסה ומלפפון חמוץ בטוסטר</div>
-            <div class="menu-item-price">₪30</div>
-          </div>
-        </div>
-        <!-- sandwish end-->
-
-        <!-- hot drinks start -->
-        <div class="row menu-tab-content" id="hot-drinks">
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/latte.jpg" alt="menu item thumbnail" />
-              <h2>הפוך - קפוצ’ינו - נס קפה</h2>
-            </div>
-            <table class="tablePrice">
-              <tr>
-                <td>קטן</td>
-                <td>|</td>
-                <td>גדול</td>
-              </tr>
-              <tr>
-                <td>₪10</td>
-                <td></td>
-                <td>₪15</td>
-              </tr>
-            </table>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/espresso.jpg" alt="menu item thumbnail" />
-              <h2>אספרסו</h2>
-            </div>
-            <table class="tablePrice">
-              <tr>
-                <td>קטן</td>
-                <td>|</td>
-                <td>גדול</td>
-              </tr>
-              <tr>
-                <td>₪6</td>
-                <td></td>
-                <td>₪12</td>
-              </tr>
-            </table>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/hot-chocolate.jpg" alt="menu item thumbnail" />
-              <h2>שוקו חם</h2>
-            </div>
-            <table class="tablePrice">
-              <tr>
-                <td>קטן</td>
-                <td>|</td>
-                <td>גדול</td>
-              </tr>
-              <tr>
-                <td>₪10</td>
-                <td></td>
-                <td>₪15</td>
-              </tr>
-            </table>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/americano.jpg" alt="menu item thumbnail" />
-              <h2>אמריקנו</h2>
-            </div>
-            <div class="menu-item-price">₪15</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/machiato.jpg" alt="menu item thumbnail" />
-              <h2>מקיאטו - אילן</h2>
-            </div>
-            <div class="menu-item-price">₪10</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/tea.jpg" alt="menu item thumbnail" />
-              <h2>תה - תיון לבחירה</h2>
-            </div>
-            <div class="menu-item-price">₪10</div>
-          </div>
-        </div>
-        <!-- hot drinks end -->
-
-        <!-- cold drinks start -->
-        <div class="row menu-tab-content" id="cold-drinks">
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>סחוט טבעי</h2>
-            </div>
-            <div class="menu-item-price">₪15</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>קפה קר</h2>
-            </div>
-            <table class="tablePrice">
-              <tr>
-                <td>קטן</td>
-                <td>|</td>
-                <td>גדול</td>
-              </tr>
-              <tr>
-                <td>₪10</td>
-                <td></td>
-                <td>₪15</td>
-              </tr>
-            </table>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>שוקו קר</h2>
-            </div>
-            <table class="tablePrice">
-              <tr>
-                <td>קטן</td>
-                <td>|</td>
-                <td>גדול</td>
-              </tr>
-              <tr>
-                <td>₪10</td>
-                <td></td>
-                <td>₪15</td>
-              </tr>
-            </table>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>אייס טעמים</h2>
-            </div>
-            <table class="tablePrice">
-              <tr>
-                <td>קטן</td>
-                <td>|</td>
-                <td>גדול</td>
-              </tr>
-              <tr>
-                <td>₪12</td>
-                <td></td>
-                <td>₪15</td>
-              </tr>
-            </table>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>מילקשייק אוראו</h2>
-            </div>
-            <div class="menu-item-price">₪22</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>מילקשייק לוטוס</h2>
-            </div>
-            <div class="menu-item-price">₪22</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>מילקשייק תות</h2>
-            </div>
-            <div class="menu-item-price">₪22</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>מילקשייק בואנו</h2>
-            </div>
-            <div class="menu-item-price">₪22</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-left">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>מילקשייק שוקולד</h2>
-            </div>
-            <div class="menu-item-price">₪22</div>
-          </div>
-          <div class="menu-item" data-aos="fade-up-right">
-            <div class="menu-item-title">
-              <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
-              <h2>שייקפה שוקולד</h2>
-            </div>
-            <div class="menu-item-price">₪22</div>
-          </div>
-        </div>
-        <!-- cold drinks end -->
-      </div>
-    </section>
-
-    <!-- footer start -->
-    <footer class="menuFooter" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="copyright">
-            &copy; 2023 - Powered by
-            <a href="https://web-reflect.com/">Web Reflect</a>
-          </div>
+          <div class="menu-item-price">₪8</div>
         </div>
       </div>
-    </footer>
-    <!-- footer end -->
-    <!-- menu section end -->
-    <script src="js/aos.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+      <!-- dessert end -->
+
+      <!-- special morning start -->
+      <div class="row menu-tab-content" id="special-morning">
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/borekas.jpg" alt="menu item thumbnail" />
+            <h2>בורקס אישי גבינה / תפוח אדמה</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪10</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/borekas-sandwish.jpg" alt="menu item thumbnail" />
+            <h2>סנדוויץ בורקס</h2>
+          </div>
+          <div class="disc">
+            גבינה, רוטב פסטו, עגבניות, מלפפון חמוץ
+            <br />
+            (ביצה קשה +₪3)
+          </div>
+          <div class="menu-item-price">₪15</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/mnkoshe.jpg" alt="menu item thumbnail" />
+            <h2>פיתה עם זעתר</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪6</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/mnkoshe-bsal.jpg" alt="menu item thumbnail" />
+            <h2>פיתה עם בצל</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪8</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/mnkoshe-jebne.jpg" alt="menu item thumbnail" />
+            <h2>פיתה עם גבינה</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪9</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/pizza.jpg" alt="menu item thumbnail" />
+            <h2>פיצה אישית עם תוספת אחת</h2>
+          </div>
+          <div class="disc">
+            תוספות: זיתים / תירס
+            <br />
+            (זיתים ותירס +₪2)
+          </div>
+          <div class="menu-item-price">₪10</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/borekas.jpg" alt="menu item thumbnail" />
+            <h2>טוסט הבית</h2>
+          </div>
+          <div class="disc">
+            מיקס גבינה צהובה ובולגרית עם רוטב הבית,זיתים ותירס
+          </div>
+          <div class="menu-item-price">₪20</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/borekas.jpg" alt="menu item thumbnail" />
+            <h2>בורקס עגלה</h2>
+          </div>
+          <div class="disc">
+            גבינה / תפוח אדמה / פיצה / פטריות (תרד וגבינה +₪4)
+            <br />
+            מוגש עם מלפפון חמוץ זיתים ורוטב עגבניות (תוספת ביצה +₪3)
+          </div>
+          <div class="menu-item-price">₪17</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/borekas.jpg" alt="menu item thumbnail" />
+            <h2>שתי מקלות גבינה לבחירה</h2>
+          </div>
+          <div class="disc">גבינה / גבינה חריפה (תוספת מקל +₪8)</div>
+          <div class="menu-item-price">₪16</div>
+        </div>
+      </div>
+      <!-- special morning end -->
+
+      <!-- personal pastry start -->
+      <div class="row menu-tab-content" id="personal-pastry">
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
+            <h2>קרואסון חמאה</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪10</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
+            <h2>קרואסון שוקולד</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪10</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
+            <h2>קרואסון שקדים</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪10</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
+            <h2>קרואסון גבינה</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪10</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
+            <h2>קינמון</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪10</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/korason.jpg" alt="menu item thumbnail" />
+            <h2>רוגלך</h2>
+          </div>
+          <!-- <div class="disc"></div> -->
+          <div class="menu-item-price">₪10</div>
+        </div>
+      </div>
+      <!-- personal pastry end-->
+
+      <!-- sandwish start -->
+      <div class="row menu-tab-content" id="sandwish">
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
+            <h2>בגט טונה</h2>
+          </div>
+          <div class="disc">חסה, בצל, והממרח המיוחד שלנו, תירס מיונז וזעתר</div>
+          <div class="menu-item-price">₪25</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
+            <h2>בגט גבינה וסלמי</h2>
+          </div>
+          <div class="disc">גבינת גאודה, סלמי, רוטבאיולי, חסה ומלפפון חמוץ</div>
+          <div class="menu-item-price">₪25</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
+            <h2>בגט נקניקיות גריל קלאסי</h2>
+          </div>
+          <div class="disc">נקניקיות חריפות / רגילות ומלפפון חמוץ</div>
+          <div class="menu-item-price">₪20</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
+            <h2>גבטה בולגרית</h2>
+          </div>
+          <div class="disc">רוטב פסטו, עגבניות, חסה, מלפפון חמוץ</div>
+          <div class="menu-item-price">₪25</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/sandwish.jpg" alt="menu item thumbnail" />
+            <h2>המיוחד שלנו</h2>
+          </div>
+          <div class="disc">לחם פרינה עם כתף בקר וגבינה צהובה, רוטב פסטו ואיולי, חסה ומלפפון חמוץ בטוסטר</div>
+          <div class="menu-item-price">₪30</div>
+        </div>
+      </div>
+      <!-- sandwish end-->
+
+      <!-- hot drinks start -->
+      <div class="row menu-tab-content" id="hot-drinks">
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/latte.jpg" alt="menu item thumbnail" />
+            <h2>הפוך - קפוצ’ינו - נס קפה</h2>
+          </div>
+          <table class="tablePrice">
+            <tr>
+              <td>קטן</td>
+              <td>|</td>
+              <td>גדול</td>
+            </tr>
+            <tr>
+              <td>₪10</td>
+              <td></td>
+              <td>₪15</td>
+            </tr>
+          </table>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/espresso.jpg" alt="menu item thumbnail" />
+            <h2>אספרסו</h2>
+          </div>
+          <table class="tablePrice">
+            <tr>
+              <td>קטן</td>
+              <td>|</td>
+              <td>גדול</td>
+            </tr>
+            <tr>
+              <td>₪6</td>
+              <td></td>
+              <td>₪12</td>
+            </tr>
+          </table>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/hot-chocolate.jpg" alt="menu item thumbnail" />
+            <h2>שוקו חם</h2>
+          </div>
+          <table class="tablePrice">
+            <tr>
+              <td>קטן</td>
+              <td>|</td>
+              <td>גדול</td>
+            </tr>
+            <tr>
+              <td>₪10</td>
+              <td></td>
+              <td>₪15</td>
+            </tr>
+          </table>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/americano.jpg" alt="menu item thumbnail" />
+            <h2>אמריקנו</h2>
+          </div>
+          <div class="menu-item-price">₪15</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/machiato.jpg" alt="menu item thumbnail" />
+            <h2>מקיאטו - אילן</h2>
+          </div>
+          <div class="menu-item-price">₪10</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/tea.jpg" alt="menu item thumbnail" />
+            <h2>תה - תיון לבחירה</h2>
+          </div>
+          <div class="menu-item-price">₪10</div>
+        </div>
+      </div>
+      <!-- hot drinks end -->
+
+      <!-- cold drinks start -->
+      <div class="row menu-tab-content" id="cold-drinks">
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>סחוט טבעי</h2>
+          </div>
+          <div class="menu-item-price">₪15</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>קפה קר</h2>
+          </div>
+          <table class="tablePrice">
+            <tr>
+              <td>קטן</td>
+              <td>|</td>
+              <td>גדול</td>
+            </tr>
+            <tr>
+              <td>₪10</td>
+              <td></td>
+              <td>₪15</td>
+            </tr>
+          </table>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>שוקו קר</h2>
+          </div>
+          <table class="tablePrice">
+            <tr>
+              <td>קטן</td>
+              <td>|</td>
+              <td>גדול</td>
+            </tr>
+            <tr>
+              <td>₪10</td>
+              <td></td>
+              <td>₪15</td>
+            </tr>
+          </table>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>אייס טעמים</h2>
+          </div>
+          <table class="tablePrice">
+            <tr>
+              <td>קטן</td>
+              <td>|</td>
+              <td>גדול</td>
+            </tr>
+            <tr>
+              <td>₪12</td>
+              <td></td>
+              <td>₪15</td>
+            </tr>
+          </table>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>מילקשייק אוראו</h2>
+          </div>
+          <div class="menu-item-price">₪22</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>מילקשייק לוטוס</h2>
+          </div>
+          <div class="menu-item-price">₪22</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>מילקשייק תות</h2>
+          </div>
+          <div class="menu-item-price">₪22</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>מילקשייק בואנו</h2>
+          </div>
+          <div class="menu-item-price">₪22</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-left">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>מילקשייק שוקולד</h2>
+          </div>
+          <div class="menu-item-price">₪22</div>
+        </div>
+        <div class="menu-item" data-aos="fade-up-right">
+          <div class="menu-item-title">
+            <img src="img/menu/milshake.jpg" alt="menu item thumbnail" />
+            <h2>שייקפה שוקולד</h2>
+          </div>
+          <div class="menu-item-price">₪22</div>
+        </div>
+      </div>
+      <!-- cold drinks end -->
+    </div>
+  </section>
+
+  <!-- footer start -->
+  <footer class="menuFooter" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="copyright">
+          &copy; 2023 - Powered by
+          <a href="https://web-reflect.com/">Web Reflect</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <!-- menu section end -->
+  <script src="js/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
