@@ -588,6 +588,10 @@ table {
 
 .menu-section {
     background-color: var(--dark);
+    background-image: url('../img/gifts-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     padding-bottom: 60px;
 }
 
