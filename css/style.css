@@ -380,14 +380,14 @@ section {
     right: 0;
     z-index: 1;
     transition: all 0.5s ease;
-    transform: translateX(-200px);
+    transform: translateX(-150px);
 }
 
 .header .nav-toggler span {
     height: 2px;
     width: 30px;
     display: block;
-    background-color: var(--white);
+    background-color: gray;
     position: relative;
 }
 
@@ -404,7 +404,7 @@ section {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--white);
+    background-color: gray;
 }
 
 .header .nav-toggler span::before {
@@ -429,8 +429,8 @@ section {
     position: fixed;
     right: 0;
     top: 0;
-    height: 100%;
-    width: 280px;
+    height: 50%;
+    width: 50%;
     background-color: var(--dark-light);
     box-shadow: var(--shadow);
     overflow-y: auto;
@@ -444,7 +444,8 @@ section {
 }
 
 .header .nav ul li a {
-    display: block;
+    display: grid;
+    justify-content: center;
     font-size: 25px;
     color: var(--white);
     padding: 10px 30px;
