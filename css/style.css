@@ -387,7 +387,7 @@ section {
     height: 2px;
     width: 30px;
     display: block;
-    background-color: gray;
+    background-color: var(--dark-light);
     position: relative;
 }
 
@@ -404,7 +404,7 @@ section {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: gray;
+    background-color: var(--dark-light);
 }
 
 .header .nav-toggler span::before {
@@ -431,7 +431,7 @@ section {
     top: 0;
     height: 50%;
     width: 50%;
-    background-color: var(--dark-light);
+    background-color: var(--main-color);
     box-shadow: var(--shadow);
     overflow-y: auto;
     padding: 80px 0 40px;
